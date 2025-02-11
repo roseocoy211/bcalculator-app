@@ -1,7 +1,7 @@
 Project Description: 
 This project is a simple web calculator that adds two numbers.The calculator includes two input fields for numbers, a result field, and three buttons: Add, Clear, and Exit. 
 
-Deployment Link: 
+Deployment Link: https://roseocoy211.github.io/bcalculator-app/
 
 
 Learning experience/challenges:
