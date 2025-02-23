@@ -1,10 +1,20 @@
-document.getElementById('addBtn').addEventListener('click', function() {
-    const num1 = parseFloat(document.getElementById('num1').value) || 0;
-    const num2 = parseFloat(document.getElementById('num2').value) || 0;
-    if (isNaN(num1) || isNaN(num2)) {
-        alert('Please enter a valid number.');
-        return; 
-    }
+document.getElementById('addBtn').addEventListener('click', function () {
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
+
+    let num1Field = document.getElementById('num1');
+    let num2Field = document.getElementById('num2');
+
+    if (isNaN(num1)) {
+        alert('Error: Please enter a valid number for the first input.');
+        num1Field.focus(); 
+        return;
+    } 
+    if (isNaN(num2)) {
+        alert('Error: Please enter a valid number for the second input.');
+        num2Field.focus(); 
+        return;
+    } 
     document.getElementById('result').value = num1 + num2;
 });
 
